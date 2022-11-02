@@ -1,0 +1,99 @@
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+}
+
+:root {
+    --color: red;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+
+
+
+/* .parent {
+
+} */
+
+.shap {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 10px solid #000;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+}
+
+.shap::before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.shap::after {
+    content: "";
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.smail {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border: 10px solid #000;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.name {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.name h2 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
